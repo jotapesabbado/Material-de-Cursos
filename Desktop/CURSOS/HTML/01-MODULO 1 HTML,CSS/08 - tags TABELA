@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Pagina teste</title>
+
+	</head>
+	<body>
+		<table width ="500" border = "1">
+				<tr bgcolor = "#999999">
+						<td >Produto</td>
+						<td>Imagem</td>
+						<td width ="60" align = "center">Qt.</td>
+						<td>Preço</td>
+				</tr>
+				<tr>
+						<td>Pedra</td>
+						<td> <img src="http://www.google.com.br/google.jpg" width = "50"/></td>
+						<td>2</td>
+						<td width = "150">150</td>
+				</tr>
+				<tr>
+						<td>Papel</td>
+						<td><img src="http://www.google.com.br/google.jpg" width = "50"/></td>
+						<td>2</td>
+						<td >100</td>
+				</tr>	
+				<tr  bgcolor = "#999999">
+						<td colspan ="3" align ="right">subtotal</td>
+						<td >250</td>
+				</tr>	
+		</table>		
+
+	</body>
+</html>
+
+
+**colspan atributo para mesclar linhas da tabela
+**tr linha
+**td coluna
+**align alinhamento ou posição da informação 
+**bgcolor define a cor de fundo

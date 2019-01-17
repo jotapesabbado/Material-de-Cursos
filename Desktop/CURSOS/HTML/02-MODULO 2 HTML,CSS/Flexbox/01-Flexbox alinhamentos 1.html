@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Flexbox</title>
+	<style type="text/css">
+		.container{
+			display:flex;
+			height: 500px;
+			background-color: #333;
+			/*
+			-alinhamento onde comecar 
+			justify-content:flex-start;
+			-alinhamento onde terminar
+			justify-content:flex-end;
+			-alinhamento no centro
+			justify-content:center;
+			-alinamento com espacamento igual
+			justify-content:space-around;
+			-alinhamento ocupando a tela toda
+			justify-content:space-between
+			*/
+			justify-content:flex-end;
+			align-items:flex-end;
+
+			flex-direction:row;
+		}
+		.container div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			margin: 10px;
+			padding: 10px;
+			font-size: 18px;
+		}		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div >1</div>
+		<div >2</div>
+		<div >3</div>
+
+
+	</div>
+
+</body>
+</html>
+
+<!--
+	*flex da prioridade a manter o tamanho dentro da div mesmoq ue voce ultrapasse a largura
+	*com flax-wrap voce pode fazer pular pra linha de baixo(wrap ou nowrap)
+	*com flax-flow voce consegue definir 2 prorpiedades ao mesmo tempo(direção(column e row ou nocolumn e norow) e quebra de linha)
+	*conteudo do conteiner centralizado na direção especificada(row ou column)
+	justify-content:center;
+	centraliza no contrario da direção especificada align-items:center;	
+
+-->

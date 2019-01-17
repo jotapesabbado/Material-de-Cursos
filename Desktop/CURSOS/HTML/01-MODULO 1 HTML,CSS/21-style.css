@@ -1,0 +1,30 @@
+body{
+	margin:0;
+}
+.texto{
+	width:300px;
+	height:100px;
+	background-color:blue;
+	color:white;
+	font-size:20px;
+	font-family:Calibri,Verdana;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:underline;
+	
+	margin-bottom:10px;
+	
+	display:inline-block;
+
+	}
+	
+/*display none serve para esconder algo na tela, porem
+o codigo continua a existir*/
+/*display block serve para mostrar algo que esta em um block 
+em um bloco no caso uma div*/
+/*display inline fara com que se adapte a uma linha de um texto
+fazendo com que os parametros de altura e de largura não funcionem*/
+/*display inline-block faz com que os blocos se ajustem a linha, mas
+não virando parte do texto*/
+
+

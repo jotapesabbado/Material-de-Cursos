@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>titulo da pagina</title>
+	</head>
+	<body>
+		<a href = "https://www.google.com.br/search?safe=strict&client=firefox-b-ab&dcr=0&biw=798&bih=779&tbm=isch&sa=1&ei=LRKOWpnHEIKhwQSPxrqgAg&q=empolgante&oq=empolgante&gs_l=psy-ab.3..0l4j0i67k1l2j0j0i30k1l2j0i5i30k1.29113.30830.0.31037.11.10.0.1.1.0.129.894.0j8.9.0....0...1c.1.64.psy-ab..1.9.896.0...100.NXgzjZP9dmk#imgrc=QCLdBS5fkRwjZM:" 
+		>CLIQUE AQUI
+
+		</a>
+
+		<a href = "documento.pdf" download 
+		>BAIXAR DOCUMENTO>
+
+		</a>
+
+		<a href = "https://www.google.com.br/search?safe=strict&client=firefox-b-ab&dcr=0&biw=798&bih=779&tbm=isch&sa=1&ei=LRKOWpnHEIKhwQSPxrqgAg&q=empolgante&oq=empolgante&gs_l=psy-ab.3..0l4j0i67k1l2j0j0i30k1l2j0i5i30k1.29113.30830.0.31037.11.10.0.1.1.0.129.894.0j8.9.0....0...1c.1.64.psy-ab..1.9.896.0...100.NXgzjZP9dmk#imgrc=QCLdBS5fkRwjZM:" 
+		target ="_blank">CLIQUE AQUI
+
+		</a>
+	</body>
+</html>
+
+**(a) tag para adicionar um link com outro destino
+**href define o destino do clic
+**download atributo para baixar um documento para o pc do usuario
+(vai falhar pq tem que criar o arquivo)
+**target = "_blank" atributo usado para abrir o link em outra aba

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>titulo da pagina</title>
+	</head>
+	<body>
+		<ol type = "A"> lista ordenada Ordenade List
+			<li>primeiro</li>
+			<li>segundo</li>
+			<li>terceiro</li>
+
+		</ol>	
+	</body>
+</html>
+
+
+**type é um atributo
+** tipos de type "1", "A", "a", "I", "i"

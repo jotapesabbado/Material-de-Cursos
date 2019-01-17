@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "759401124147",
+    "firebase_url": "https://login-e-cadastro-ad376.firebaseio.com",
+    "project_id": "login-e-cadastro-ad376",
+    "storage_bucket": "login-e-cadastro-ad376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759401124147:android:228087819fe7fd61",
+        "android_client_info": {
+          "package_name": "com.firabase.joo.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759401124147-lbsok33d263870pvr8u1i0mfk3088gc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firabase.joo.myapplication",
+            "certificate_hash": "36f32817c03a484d561393dd60a99a4821aff014"
+          }
+        },
+        {
+          "client_id": "759401124147-mna7i5nmo5ml89bihidp15ghhbt791cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABDSDXkirAspgfUfM3b9mJZyhrXiJ5DmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759401124147-mna7i5nmo5ml89bihidp15ghhbt791cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,178 @@
+
+body{
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+.menu{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222;
+	height: 50px;
+
+}
+
+#l1{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin: auto;
+}
+#l2{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: auto;
+}
+
+.menuint{
+	height: 50px;
+	border-top: none;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+.menuint ul{
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.menuint li{
+	color: #666;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 8px;
+	padding-right: 8px;
+	float: left;
+	transition: all 0.5s ease-in-out;
+}
+.menuint img{
+	transition: all 0.5s ease-in-out;	
+}
+
+.menuint li:hover{
+
+	 color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+.menuint li:hover img{
+	border-radius: 25px;
+	background-color: #666;	
+	 color: #fff;
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.social{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 50px;
+	width: 180px;
+	position: absolute;
+	
+}
+#img1{
+	margin-top: 10px;
+	margin-right: 10px;
+	z-index: 1;
+	position: absolute;
+	right: 50;
+}
+
+#img11{
+	transition:opacity 0.5s ease-in-out;
+	margin-top: 10px;
+	margin-right: 10px;
+	position: absolute;
+	right: 50;
+	z-index: 2;	
+}
+#img11:hover{
+	opacity: 0;
+}
+
+#img2{
+	
+	margin-top: 10px;
+	margin-right: 10px;
+	position: absolute;
+	right: 90;
+	border-radius: 15px;
+	box-shadow: 
+	0 0 5px #fff,
+    0 0 10px #3b5998,
+    0 0 20px #3b5998,
+    0 0 40px #3b5998,
+    0 0 80px #3b5998,
+    0 0 90px #3b5998,
+    0 0 100px #3b5998,
+    0 0 150px #3b5998;
+}
+
+
+#img21{
+	transition:opacity 1s ease-in-out;
+	margin-top: 10px;
+	margin-right: 10px;
+	position: absolute;
+	right: 90;
+
+}
+#img21:hover{
+	opacity: 0;
+}
+
+#img2:hover{
+	opacity: 0;
+}
+#img3{
+	margin-top: 10px;
+	margin-right: 10px;
+	z-index: 1;
+	position: absolute;
+	right: 130;
+}
+
+#img31{
+	transition:opacity 0.5s ease-in-out;
+	margin-top: 10px;
+	margin-right: 10px;
+	position: absolute;
+	right: 130;
+	z-index: 2;	
+}
+#img31:hover{
+	opacity: 0;
+}
+
+#l3{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin: auto;
+}
+
+.fundo{
+
+	width: 100%;
+	height:100%;
+}

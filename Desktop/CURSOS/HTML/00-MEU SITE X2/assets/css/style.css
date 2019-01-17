@@ -1,0 +1,332 @@
+@font-face {
+  font-family: 'star';
+  src: url('../font/star.ttf') format('truetype'); 
+}  
+
+@font-face {
+  font-family: 'pixel';
+  src: url('../font/Pixeled.ttf') format('truetype'); 
+} 
+
+
+/****************/
+
+.padding{
+	padding: 20px;
+	margin: 10px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: star,Arial;
+	color: white;
+}
+
+/*HEADER*/
+
+header,#header_section{
+	display: flex;
+	width: 100%;
+	cursor: url('../img/cursor.cur'),auto;
+	
+}
+#header_section{
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#banner{
+	display: flex;
+	width: 100%;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+#galaxy{
+	width: 100%;
+	height: 100%;
+}
+
+#myinfo{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#myinfo h1{
+	padding: 0;
+	margin: 0;	
+	font-family: star;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+#myinfo h3{
+	padding: 0;
+	margin: 0;
+	font-family: star;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+nav{
+	background:radial-gradient(circle,#222 5%,transparent);
+	width: 100%;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+}
+
+nav ul,nav li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul{
+	display: flex;
+
+}
+nav li{
+	display: flex;	
+	align-items: center;
+}
+nav a{
+	color: #888;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: ease-in-out 0.5s;
+}
+
+nav img{
+	transition: all 0.5s ease-in-out;	
+}
+
+
+canvas{
+	width: 57px;
+	height: 57px;
+}
+
+/*MOVIMENTAÇÕES DO HEADER*/
+
+nav a:hover{	
+	color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+nav a:hover img{
+	border-radius: 25px;
+	background-color: #666;	
+	 color: #fff;
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+/*********************************************/
+
+
+/*BLOCOS*/
+
+#main_section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.blocos{
+	background-color: #444;
+	display: flex;
+	width: 100%;
+}
+.blocos_titlo{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.blocos_titlo h3{
+	margin: 0;
+	color: black;
+	font-weight: normal;
+	padding: 5px;
+	font-size: 30px;
+}
+
+.blocos_titlo .brasao{
+	padding: 5px;
+	width: 100px;
+	height:100px;
+}
+
+.titulo_in{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	flex: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.sabre{
+	flex: 3;
+	height: 188px;
+	background-image: url("../img/saber.png");
+	background-size: cover;
+}
+
+
+.bloco_conteudo{
+	flex: 4;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+}
+
+.topscreen{
+	position: absolute;
+	width: 100%;
+	display: flex;
+}
+
+
+.topscreen_section{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.topscreen_section h3{
+	padding: 0;
+	margin: 0;
+	font-family: pixel;
+}
+
+.life{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#game{
+	width: 100%;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.alvo{
+	margin-top: 60px;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.monster{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.monster a{
+	cursor: url('../img/saber.cur'),auto;
+	text-decoration: none;
+	color: white;
+}
+
+.monster img{
+	width: 150px;
+	height: 200px;
+}
+
+.monster h3{
+	padding: 0;
+	margin: 0;
+	font-family: pixel;
+	font-size: 35px;
+}
+
+
+.rules {
+	font-family: pixel;
+	width: 100%;	
+	overflow: hidden;
+	position: relative;
+	height: 60px;
+}
+.rules h3 {
+	 font-size: 20px;
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 padding: 0;
+	 line-height: 50px;
+	 text-align: center;
+	 /* Starting position */
+	 -moz-transform:translateX(100%);
+	 -webkit-transform:translateX(100%);	
+	 transform:translateX(100%);
+	 /* Apply animation to this element */	
+	 -moz-animation: rules 10s linear infinite;
+	 -webkit-animation: rules 10s linear infinite;
+	 animation: rules 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes rules {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes rules {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes rules {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<html>
+
+	<head>
+		<title>Titulo da sua página</title>
+		
+	</head>
+	<body>
+	<p> cria paragrafo.<br/>
+	pula linha normal</p>
+	<p>espaçamento de paragrafo</p>	
+
+	<pre>
+	Pula linha de acordo
+	com a formatação que eu der 
+
+	Aqui!!
+	</pre>
+
+	</body>
+
+</html>

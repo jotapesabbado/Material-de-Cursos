@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+}
+.exemplo{
+	width: 500px;
+	height: 200px;
+	/*garante que se o degrade não funcionar vai ficar azul*/
+	background-color: blue;
+	/*sintaxe padrão(angulo em graus, cores)*/
+	background: linear-gradient(-90deg, white, blue, red);
+	/*
+	para verções do mozila que não suportão o degrada
+	background:-moz-linear-gradient(white, blue, red);
+	para verções do opera que não suportão o degrada
+	background:-o-linear-gradient(white, blue, red);
+	para verções do safari que não suportão o degrada	
+	background:-webkit-linear-gradient(white, blue, red);
+*/
+}

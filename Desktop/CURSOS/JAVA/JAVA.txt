@@ -1,0 +1,986 @@
+SUPER TRETAS NO JAVA CUZAUM!!!!!
+--------------------------------------------------------------------------------------------------------------------------------
+
+*sout = System.out.println (printa na tela pulando linha)
+
+
+*System.out.printf(printar formatado{(\n)->pula linha(%.)inicial da classe que a váriavel percente,ex:f=float,i=int...)}   
+
+
+*Scanner var = new Scanner(System.in)-->(--ENTRADA DE DADOS--)
+
+
+*String<---classe involocro pra TEXTO.
+
+
+*Forma de especificar o valor dentro do tipo
+Typecast
+int idade = (int) 3;
+quer dizer que o valor 3 poderia ser real,inteiro
+mas com o Typecast você especifica que o valor é inteiro
+
+
+*Wrapper Class :usando classes involocro
+ Integer var = new Integer (valor da variavel);
+ Classe involocro do tipo "int": Integer
+ new: Transforma uma variavel de classe em um objeto
+
+-----------------------------------------------------
+*EXEMPLOS DE COMO ENTRAR COM DADOS NO PROGRAMA:     |
+                                                    |
+Scanner teclado = new Scanner(System.in);           |
+     String nome = teclado.nextLine();              |
+     float nota = teclado.nextFloat();              |
+     int numero = teclado.nextInt();                |
+     boolean logico = teclado.nextBoolean();        |
+     long batata = teclado.nextLong();              |
+-----------------------------------------------------
+------------------------------------------------------------
+*EXEMPLO DE COMO TRANFORMAR UM VALOR (int) EM UMA (String):|
+                                                           |
+int idade = 20;                                            |
+     String valor = Integer.toString(idade);               | 
+------------------------------------------------------------
+------------------------------------------------------------
+*EXEMPLO DE COMO TRANFORMAR UM VALOR (String) EM UMA (int):|
+                                                           |
+String valor = "4";                                        |
+	int idade = Integer.parseInt(valor);               |
+------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 1, SOMAR 2 VALORES (imagem:EXEMPLO1.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+*get.Text: pegar os valores de String de uma caixa de texto
+*set.Text: por valorem de String em uma caixa de texto
+
+1-Montar o projeto Swing de acordo com a imagem e apos isso dar uma ação ao botão
+
+int n1 = Integer.parseInt(txtN1.getText());
+
+int n2 = Integer.parseInt(txtN2.getText());
+
+int s = n1 + n2;
+
+lblResposta.setText(Integer.toString(s));
+
+
+OBS-1:O (n1) inteiro e a caixa de texto (txtN1) pega valores em (String)
+por isso devemos transformar o conteudo da caixa de texto em (int)
+
+OBS-2:A leitor (lblResposta) só consegue projetar na tela valores em (String)
+porem a variavel resultante (s) é (int) então precisa ser transformada
+
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 2, CALCULAR IDADE(COM ICONES E IMAGENS) (imagem:EXEMPLO2.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+int an = Integer.parseInt(jSpinner.getValue().toString());
+int id = 2017-an;
+jLabel4.setText(Integer.toString(id));
+
+
+1-Montar o projeto Swing de acordo com a imagem e dar uma ação para o botão
+
+OBS-1:Para adicionar uma imagem crie um jLabel, apague o texto dele e entre na 
+propriedade (ICON).Apos isso importe uma imagem para dentro de um pacote vazio
+OBS-2:Na caixa de texto giratoria (Spinner) entre na propriedade model e selecione
+a opção numerica para configurar os valores recebidos
+
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 3, CALCULAR IDADE(ULTILIZANDO OS VALORES DO SISTEMA) (imagem:EXEMPLO3.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Adicione um evento/component/componentShown no jLabel, para que ao
+iniciar o programa a data do sistema apareça nele 
+
+Dentro do evento:
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+jLabel5.setText(sdf.format(new Date()));
+
+3-Adicione uma ação ao botão
+
+Dentro do evento:
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+int ano = Integer.valueOf(sdf.format(new Date()));
+int rp = ano-an;
+jLabel4.setText(Integer.toString(rp));
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 4, DIVIDIR VALORES(MOSTRAR RESTO) (imagem:EXEMPLO4.png) 
+--------------------------------------------------------------------------------------------------------------------------------        
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento: 
+int num = Integer.parseInt(jTextField1.getText());
+int div = Integer.parseInt(jTextField2.getText());
+int rez = num%div;
+float dividir = (num/div);
+jLabel5.setText(Float.toString(dividir));
+jLabel6.setText(Integer.toString(rez));        
+
+OBS-1:Os operadores matematicos no geral são iguais aos do Visualg as únicas coisas
+para se observar nesse exercicio são como sentenciar a um operador Float (Float.toString)
+e como mostrar o resto (num%div).
+--------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
+*EXEMPLO DE INCREMENTO E DECREMENTO:                       |
+igual a cont<-cont+1 do Visualg                            |
+N++=N+1                                                    |
+N--=N-1                                                    | 
+                                                           | 
+Em uma estrutura de repetição existe 2 formas              |
+de incremento e decremento:Pre e Pós...                    |
+                                                           |
+Dessa forma um PreIncremento ao numero 10 em               |
+uma estrutura de repetição formaria a sequencia de         |
+11,12,13,14...                                             |
+E o PósIncremento formaria a sequencia de                  |
+10,11,12,13...                                             |
+                                                           |
+*Exemplo Pre:                                              |
+int valor= ++5                                             |
+valor=6                                                    |
+*Exemplo Pós:                                              |
+int valor= 5++                                             |
+valor=5                                                    |
+------------------------------------------------------------
+
+------------------------------------------------------------
+*EXEMPLO DE OPERADORES DE ATRIBUIÇÃO:                      |
+Fazem a mesma coisa que o incremento porem o valor da      |
+incrementação a sua escolha:(+=,-=,/=,*=,%=)               |
+(x+= mesmo que x=x+2)                                      |
+int x =6;                                                  | 
+x +=2;                                                     | 
+x=8                                                        |
+------------------------------------------------------------
+                                       
+*Classe Math:
+-PI  //constate de pi//Math.PI      // 3,1415..
+-pow //exponenciação //Math.pow(3,2)// 9
+-sqrt//Raiz quadrada //Math.sqrt(25)// 5
+-cbrt//Raiz cubica   //Math.cbrt(27)// 3
+
+(Aredondamentos)
+-abs  //Valor Absoluto    //Math.abs(-10)  // 10
+-floor//Arredonda p/ Baixo//Math.floor(3,9)// 3
+-ceil //Arredonda p/ Cima //Math.ceil(4,2) // 5
+-round//Arredonda Normal  //Math.round(5,6)// 6
+
+(Gerador de Numeros Aleatorios)
+-Math.random();
+geraum numero aleatorio entre 0 e 1
+Obs: se você quiser alterar o intervalo basta escrever:
+duble aleatorio = Math.random();
+(intervalo entre 4 e 12)
+int n = (int) (4 + aleatorio * (12 - 4));
+sout(n);
+
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 5, SUPER CALCULADORA (imagem:EXEMPLO5.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+       jLabel1.setText("Resto da divisão por 2:");
+       jLabel2.setText("Elevado ao Cubo:");
+       jLabel3.setText("Raiz Quadrada:");
+       jLabel4.setText("Raiz Cúbica:");
+       jLabel8.setText("Valor Absoluto:");
+       int num = Integer.parseInt(jSpinner1.getValue().toString());
+       float div = num%2;
+       double cub = Math.pow(num,2);
+       double raiz = Math.sqrt(num);
+       double rcub = Math.cbrt(num);
+       double abs = Math.abs(num);
+       jLabel9.setText(Float.toString(div));
+       jLabel10.setText(Double.toString(cub));
+       jLabel11.setText(Double.toString(raiz));
+       jLabel12.setText(Double.toString(rcub));
+       jLabel13.setText(Double.toString(abs));
+
+OBS-1: Na hora de montar o projeto lembre que todas as informações
+devem aparecer após o clique no botão, então todos os jLabel vão 
+estar vazio na hora da montagem.
+OBS-2: Para pegar o valor do jSpinner1 primeiro você vai pegar o
+valor, transformar para String e depois passar para Inteiro.
+OBS-3: Após motar dessa forma olhe o vídeo 7 de exercicios pois
+lá ele mostra uma forma mais bonita de mostrar os jLabel usando o
+Painel.(minuto do vídeo 18:10) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+*Operadore Ternarios.
+É basicamente uma forma mais rapida de usar uma estrutura se entao senao
+porem limitada a atribuir algo a alguma variavel.
+
+Ex: 
+int n1,n2,r;
+n1 = 4;
+n2 = 9;
+
+r = (n1>n2) ? 0:1;
+
+Basicamente isso significa que:
+r recebera algo se n1 for maior que n2
+se n1 for maior que n2, r = 0
+se não r = 1.
+Essa é uma forma mais simples de usar uma estrutura
+condicional, porem dessa forma só funciona em
+alguns casos.
+--------------------------------------------------------------------------
+
+*Operadores Relacionais.
+No java tem uma pequena diferença na formma de declarar igualdade
+e diferença entre operadores
+
+-igualdade ==
+-diferença !=
+
+Porem isso só funciona para comparar Operadores que são da mesma 
+classe, Exemplo:
+
+String res;
+String nome1 = "BATATA";
+String nome2 = new String("BATATA");
+
+res = (nome1==nome2)?"igual":"diferente";
+sout(res)
+
+Nesse caso nós temos 2 variaveis com o mesmo conteúdo
+porem uma é um Objeto(new) e a outra não, então elas
+possuem o mesmo conteúdo mas são diferentes.
+
+res = (nome1.equals(nome2))?"igual":"diferente";
+sout(res)
+
+Porem se você ultilizar o método .equals ele ira comparar
+o conteúdo dos objetos.
+
+--------------------------------------------------------------------------
+
+*Tabela de operadores logicos --->>>> (OPERADOR LOGICO.png)
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 6, MAIOR OU MENOR DE IDADE (imagem:EXEMPLO6.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Dentro do espaço public que já é criado quando você inicia o programa
+crie uma linha de texto para esconder o painel, fazendo com que o 
+programa inicie limpo(imegem: painelInvisivel.png)
+
+Dentro do empaço pubic:
+      jPanel1.setVisible(false);
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+      jPanel1.setVisible(true);
+      int ano = Integer.parseInt(jTextField1.getText());
+      int res = 2017-ano;
+      jLabel2.setText(Integer.toString(res));
+      String resp;
+      resp = res>=18 ? "MAIOR":"MENOR";
+      jLabel3.setText(resp);
+
+--------------------------------------------------------------------------------------------------------------------------------
+      *SWING:EXEMPLO 7, JOGO DE ADIVINHAÇÃO (imagem:EXEMPLO7.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Delimite o jSpinner para ir de 0 ate 5 na propriedade
+model.
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        int num = (int) jSpinner1.getValue();
+        double ram = 1 + Math.random() * (6-1);
+        int n = (int) ram;
+        String f1 = "ACERTO MIZERAVI";     
+        String f2 = "<html>ERROOOOUU o numero era "+n+"</html>";
+        String test = (num==n)? f1:f2;
+        jLabel4.setFont(new Font("Arial Black",Font.PLAIN, 20));
+        jLabel4.setText(test);
+
+OBS-1:<html></html> serve para quebrar linha. 
+OBS-2:jLabel4.setFont(new Font("Arial Black",Font.PLAIN, 20)); serve para 
+mudar a fonte nas mensagens dos resultados.
+OBS-3: Usar uma Wraper Class(classe involocra) na linha 1 acaba sendo mais rapido
+do que transformar o valor do spinner em string e de string pra inteiro...
+Exemplo da diferença para exercicios anteriores:
+
+Como fiz agora:
+        int num = (int) jSpinner1.getValue();
+
+Como foi feito anteriormente:
+        int an = Integer.parseInt(jSpinner.getValue().toString());
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 8, IMPAR OU PAR (imagem:EXEMPLO8.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        int num = Integer.parseInt(jTextField1.getText());
+        if (num%2==0) {
+            jLabel2.setText("PAR");
+        } else {
+            jLabel2.setText("IMPAR");
+        }
+
+OBS-1: Esse provavelmente é o programa mais facil ate agora, porem essa é
+a primeira vez que ultilizamos a estrutura condicional simples e composta
+(se então senao fimse), em Java o se vira if, o entao = { },o senao = else, e o fimse = { }.
+
+IMPORTANTE!!!!!!
+SEMPRE QUE ABRIR UMA CHAVE '{' APERTE 'ENTER' POIS O JAVA FECHA SOZINHO ELA E ISSO
+VAI EVITAR QUE VOCÊ SE ENGANE COM AS OUTRAS MILHÕES DE CHAVES QUE VÃO ESTAR ABERTAS
+COM UMA ESTRUTURA SWING.
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 9, CALCULADORA DE BASKARA E DELTA (imagem:EXEMPLO9.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Dentro do espaço public que já é criado quando você inicia o programa
+crie uma linha de texto para esconder o painel, fazendo com que o 
+programa inicie limpo(imegem: painelInvisivel.png)
+
+Dentro do empaço pubic:
+      jPanel1.setVisible(false);
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        jPanel1.setVisible(true);
+        double x2 = Double.parseDouble(jTextField1.getText());
+        double x = Double.parseDouble(jTextField2.getText());
+        double n = Double.parseDouble(jTextField3.getText());
+        double resp1 = (-x+ Math.sqrt(Math.pow(x, 2)-(4*x2*n)))/(2*x2);
+        double resp2 = (-x- Math.sqrt(Math.pow(x, 2)-(4*x2*n)))/(2*x2);
+        double delta = Math.pow(x, 2)-(4*x2*n);
+        if (delta<0){
+            jLabel11.setText("Não existem raizes reais");    
+        }else {
+            jLabel11.setText("Existem raizes reais");
+        }
+        jLabel7.setText(Double.toString(delta));
+        jLabel8.setText(Double.toString(resp1));
+        jLabel9.setText(Double.toString(resp2));        
+
+OBS-1: Na Baskara lembre que tem o + ou - por isso dois resultados de resposta
+x' e x''.
+OBS-2: O exemplo que eu montei está bem mais completo pois faz a conta da baskara
+toda ao invez do que aparece na aula de exercicios 9, que só mostra o Delta, porem
+lá ele ensina uma função com o evento Change ultilizando o jSpinner que é legal
+dar uma olhada a partir do minuto 10:00 até 14:00.
+OBS-3: Usando o jSpinner só da pra usar valores inteiros pois ele não escreve 
+fracionarios, por isso uso o jTextField. E exatamente por isso que as variaveis
+são da classe double, que deixa o programa mais pesado, porem aceita fazer conta de
+baskara com valores fracionarios.                                          
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 10, TESTE SE É PRECISO VOTAR (imagem:EXEMPLO10.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Dentro do espaço public que já é criado quando você inicia o programa
+crie uma linha de texto para esconder o painel, fazendo com que o 
+programa inicie limpo(imegem: painelInvisivel.png)
+
+Dentro do empaço pubic:
+      jPanel1.setVisible(false);
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        jPanel1.setVisible(true);
+        int ano = Integer.parseInt(jTextField1.getText());
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        int data = Integer.valueOf(sdf.format(new Date()));
+        int resp = data-ano;
+        if (resp<16) {
+            jLabel2.setText("Não Vota");
+        } else {
+            if ((resp>=16 && resp<18) || (resp>70)) {
+            jLabel2.setText("Voto Facultativo");
+        }else{
+            jLabel2.setText("Voto Obrigatorio");    
+                }
+        }
+
+OBS-1: Esse exercicio é bem simples, a única peculiaridade é a ultilização de 
+uma estrutura de comparação dentro da outra, mas a gente cansou de fazer isso
+no Visualg kkk.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+*Estrutura Codicional II
+A primeira estrutura foi o se que virou if, mas dentro das estruturas condicionais
+também temos a estrutura Escolha Caso OutroCaso é bem pouco usada pois a estrutura
+se já faz bem o trabalho.
+-Exemplo de Escolha(Switch)
+
+Visualg:                                      Java:
+inicio                                         int pernas = teclado.nextInt();    
+ leia(pernas)                                  String tipo;           
+  escolha(pernas)                              switch (pernas){               
+   caso 1                                       case 1:      
+    tipo<-"saci"                                 tipo = "saci";             
+   caso 2                                       break;      
+    tipo<-"bipede"                              case 2:              
+   caso 4                                        tipo = "bipede";    
+    tipo<-"quadrupede"                          break;                  
+  caso 6, 8                                     case 4:        
+    tipo<-"aracnideo"                            tipo = "quadrupede";                 
+   outrotipo                                    break;         
+    tipo<-"ET"                                  case 6, 8:           
+  fimescolha                                     tipo = "aracnideo";        
+ escreva(tipo)                                  break;           
+fimalgoritimo                                   default:          
+                                                 tipo = "ET"; } 
+                                                sout(tipo)                        
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 11, VERIFICADOR DE TRIANGULO (imagem:EXEMPLO11.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Dentro do espaço public que já é criado quando você inicia o programa
+crie uma linha de texto para esconder o painel, fazendo com que o 
+programa inicie limpo(imagem: painelInvisivel.png)
+
+Dentro do empaço pubic:
+      jPanel1.setVisible(false);
+
+3-Para montar esse programa você vai usar o controle deslizante(jSlider1), porem para
+que apareça o valor na hora que você deslizar ele você tera que adicionar um
+jLabel com o valor inicial que você deseja e criar um evento no controle 
+deslizante evento/Change/stateChange. Você tera que adicionar um evento pra
+cada jLabel que você desejar modificar com o controle deslizante
+
+Dentro do evento/Change/stateChange:
+     jLabel1.setText(Integer.toString(jSlider1.getValue()));
+
+4-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        jPanel1.setVisible(true);
+        int a = jSlider1.getValue();
+        int b = jSlider2.getValue();
+        int c = jSlider3.getValue();
+        if (a<b+c && b<a+c && c<a+b){
+            jLabel7.setText("Forma Triangulo");
+            if ( a==b && b==c ){    
+                jLabel8.setText("Equilatero");
+            }else 
+                if (a!=b && b!=c && c!=a){
+                jLabel8.setText("Escaleno");        
+            }   else {
+                  jLabel8.setText("Isosceles");     
+                }
+        }else {            
+            jLabel7.setText("Não Forma Triangulo");  
+            jLabel8.setText("--"); 
+        }
+
+OBS-1: Como existem 3 tipos de triangulo você terá que usar a estrutura
+condicional aninhada.
+OBS-2: Você consegue definir o valor inicial do jSlider na propriedade "value" 
+e define o valor maximo e minimo nas propriedade "maximum" e "minimum".
+OBS-3: Lembre-se de sempre que abrir uma chave apertar enter, pois o numero de chaves
+dentro de uma estrutura aninhada é grande. 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+*Estruturas de Repetição I:
+A estrutura de repetição mais comum é a (while) que se compara no Visualg ao enquanto
+Exemplo:
+	int cont = 0;
+	while (cont<=5){
+	cont++;
+	sout("REPITA" + "VEZ")
+	}
+
+*Modificadores de Fluxo de Estruturas de Repetição:
+
+-continue;
+É um modificador que faz com que a repetição pule etapas pré determinadas
+Exemplo:
+	int cont = 0;
+	while (cont<=5){
+	cont++;
+	if (cont==1 || cont==3 || cont==4){
+	continue;
+	} 
+	sout("REPITA" + "VEZ")
+	}
+
+(Joga no NetBeans)
+
+-break;
+Esse modificador tem a mesma função que o iterrompa no Visualg
+Exemplo:
+	int cont = 0;
+	while (cont<=5){
+	cont++;
+	if (cont==3){
+	break;
+	}
+	sout("REPITA" + "VEZ")
+	}
+
+(Joga no NetBeans)
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 12, CONTADOR (imagem:EXEMPLO12.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Dentro do espaço public que já é criado quando você inicia o programa
+crie uma linha de texto para esconder o painel, fazendo com que o 
+programa inicie limpo(imegem: painelInvisivel.png)
+
+Dentro do empaço pubic:
+      jPanel1.setVisible(false);
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+        jPanel1.setVisible(true);
+        int a = Integer.parseInt(jTextField1.getText());
+        int b = Integer.parseInt(jTextField2.getText());
+        String cont = "" ;
+        while(a<=b){
+            cont += a + " ";
+            a++;
+        } 
+        jLabel3.setText("<html>"+cont+"</html>");
+
+OBS-1: Nesse exercicio eu uso a incrementação na variavel 'a' assim não
+é necessario uma variavel contadora. Você encontra incrementação abaixo 
+do exemplo 4 nesse arquivo.
+OBS-2: Eu uso o <html></html> para que os numeros não atravessem a margem 
+lateral do programa, testa sem e com se não tiver entendido.
+
+--------------------------------------------------------------------------------------------------------------------------------
+*Estrutura de Repetição II
+Como nós sabemos,existem 3 tipos básicos de estruturas de repetição, as com
+teste no inicio (enquanto),teste no final (repita) e com variavel de controle
+(para), no Java nós temos as mestams estruturasde repetição, porem todas elas 
+são variantes da estrutura while (enquanto).
+
+Estrutura Repita (enquanto de cabeça pra baixo):
+int cont = 0;
+	do{
+	sout("NUMERO:" + cont);
+	cont++;
+	}while (cont<4);
+
+--------------------------------------------------------------------------------------------------------------------------------
+*Biblioteca JOpitionPane:
+É basicamente uma biblioteca de Programas prontos e pré programados de Swing.
+
+Passos de como ultilizar: 
+
+1- Crie um novo projeto no Java porem não desmarque a caixa de Criação de Classe
+Principal, pois dessa vez vamos importar as telas de Swing.
+2-Dentro da estrutura (package nomedoprojeto;) escreva: import javax.swing.JOpitionPane;
+
+Teste isso:
+	JOptionPane.showMessageDialog(null, "Batatas Maneiras","CUZCUZ",JOptionPane.ERROR_MESSAGE);
+                                                                                                          
+Depois digite (JOptionPane.s) e ache a opção ultilizada no exemplo, quando você achar o java vai te
+explicar como ela funciona e porque eu escrevi o exemplo dessa forma. Vou explicar igual mas tente por
+lá primeiro 
+	
+	JOptionPane.showMessageDialog(null, "Batatas Maneiras","CUZCUZ",JOptionPane.ERROR_MESSAGE);
+        (          COMANDO          )(QUAL JANELA),(MENSAGEM),(NOME DA JANELA),(ICONE)                                                                     
+
+OBS: Como não tem nenhuma janela por isso fica null.
+
+-TESTE ESSE EXEMPLO MUDANDO TUDO PARA VOCÊ ENTENDER MELHOR A BIBLIOTECA JOPTION !!!!!!!
+
+*Mais exemplos (Jogue no NetBeans!!!): 
+1)
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Escreva um Valor:"));
+        JOptionPane.showMessageDialog(null, "Você Digitou o Valor " + n);
+
+Modifique esse exercicio pondo mais janelas e mais opções para praticar.
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 13, MOSTRADOR DE VALORES ULTILIZANDO REPETIÇÃO E JOPTION (imagem:EXEMPLO13.png e EXEMPLO131.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1- Inicie o Projeto da forma JOption e importe a Biblioteca
+
+2- Dentro de public static void main:
+        
+        int t = 0,n,s = 0,p = 0,i = 0,c = 0;
+        do{
+         n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Informe um valor<br><em>ZERO interrompe</html>",
+                "Entrada de Dados",JOptionPane.QUESTION_MESSAGE));
+         if (n!=0 && n%2==0){
+         p++;
+         } 
+         if (n!=0 && n%2!=0){
+         i++;    
+         }    
+         if (n!=0){
+         t++;
+         }
+         if (n!=0 && n>100){
+         c++;    
+         }
+         s += n;
+        }while (n != 0);
+        int m=s/t;
+        JOptionPane.showMessageDialog(null,"<html>Resultado Final<hr>"
+                + "A soma vale: "+ s +
+                "<br> Total de Valores: " + t +
+                "<br> Valores Pares: "+ p +
+                "<br> Valores Impares"+ i +
+                "<br> Acima de 100: "+ c +
+                "<br> Média dos Valores: "+m
+                +"</html>");
+
+OBS-1: Fiz bem redundante esse codigo pra ficar facil de entender, mas fique a vontade para melhorar.
+OBS-2: Lembre-se de iniciar e fechar o implemento <html></html>, pois vai dar merda se tu não fizer!!!.
+<br> quebra linha.
+<em> italico.
+<hr> sublinhado.
+
+--------------------------------------------------------------------------------------------------------------------------------
+*Estrutura de Repetição III
+Depois de ter visto as estruturas de repetição com teste no inicio e no final agora temos que ver 
+a estrutura com variavel de controle, que tem a mesma caracteristica das outras, todas são uma forma
+alternativa de escrever o (Enquanto).
+Comparação com Portugol:
+
+Inicio                                          for(int cont = 1; cont<11; cont+=2;){                                                                            
+  Para cont de 1 ate 10 passo 2 faca                sout(cont)                                                     
+    escreval(cont)                               }                                       
+  Fimpara                                                                     
+Fimalgoritimo                                                                     
+
+-Perceba que em ambas a estrutura é formada por 3 partes
+Identação: Dizer que a variavel 'cont' vale 1.
+Limitação: Definir o ponto de parada da repetição.
+Andamento: Definir qual o passo da contagem 
+
+(Teste no NetBeans)
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 14, CONTAGEM ULTILIZANDO PARA E JOPTION (EXEMPLO FACIL, NÃO PRECISA DE IMAGENS) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1- Inicie o Projeto da forma JOption e importe a Biblioteca
+
+2- Dentro de public static void main:
+        int num1 = 0;
+        int num2 = 0;
+        num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite o valor inicial: <hr></html>","ENTRADA DE DADO",JOptionPane.OK_OPTION));
+        num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite o valor final: <hr></html>",""));
+        
+        
+        for (int cont=num1; cont<=num2; cont++){
+        JOptionPane.showMessageDialog(null, "<html>Valor da Contagem<em><hr><br>"+cont+"</html>");
+        }
+
+OBS-1:GG-easy.
+
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 15, CONTADOR (imagem:EXEMPLO15.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Para montar esse programa você vai usar o controle deslizante(jSlider1), porem para
+que apareça o valor na hora que você deslizar ele você tera que adicionar um
+jLabel com o valor inicial que você deseja e criar um evento no controle 
+deslizante evento/Change/stateChange. Você tera que adicionar um evento pra
+cada jLabel que você desejar modificar com o controle deslizante
+
+Dentro do evento/Change/stateChange:(CRIE UM EVENTO PRA CADA UM)
+     jLabel1.setText(Integer.toString(jSlider1.getValue()));
+     jLabel2.setText(Integer.toString(jSlider2.getValue()));	
+     jLabel3.setText(Integer.toString(jSlider3.getValue()));
+
+3-Adicione um evento/action/actionperformed ao Botão
+
+Dentro do evento:
+1        int i = jSlider1.getValue();
+2        int f = jSlider2.getValue();
+3        int p = jSlider3.getValue();
+4       
+5        DefaultListModel lista = new DefaultListModel();
+6        
+7        for (int cont = i; cont <= f; cont += p ){
+8            lista.addElement(cont);
+9        }
+10        
+11       jList1.setModel(lista);
+
+
+OBS-1: Na linha 5 estamos criando um modelo padrão de lista com a classe DefaultListModel, que
+você tera de importar apertando na lampada no NetBeans. Na linha 8 estamos adicionando elementos
+ao nosso Objeto lista (lembresse que o 'new' da linha 5 significa que estamos falando de Objetos).
+E na linha 11 só estamos setando os valores.
+OBS-2: Neste exercicio nos usamos o Controle (listar) que aparece como jList. Para mudar os valores
+que vão estar pre definidos nele, só va até a propriedade model e apague tudo ou use o jList dentro
+de um jPanel e modifique a visibilidade.
+OBS-3: Você também tera que setar os valores da contagem, na propriedade maximum e minumum dos sliders
+
+--------------------------------------------------------------------------------------------------------------------------------
+*Vetores:
+A ultilização de Vetores no Java é muito mais facil do que no Visualg pois as funções que você 
+ultiliza dentro de um vetor como, buscar,preencher,editar todas já são previamente sabidas pelos
+criadores de java e por isso tem diferentes classes e metodos que vão ser muito uteis.
+Esse conteudo eu vou passar de uma forma diferente, vão ter 5 exercicios de vetor comentados para
+você testar na sua IDE. Todos os exercicios vão ser montados sem usar o Swing, então quando você
+criar o projeto deixe a classe principal com a caixa marcada!!!
+
+-Como montar a estrutura basica do seu vetor:
+
+Visualg:                             Java:                                         
+var                                  int n[] = new int[4];                                   
+  vetor:x[0..3] de inteiro           n[0] = 5;                                                          
+inicio                               n[1] = 6;                                      
+n[0]<-5                              n[2] = 2;                                       
+n[1]<-6                              n[3] = 9;                                       
+n[2]<-2                                                                      
+n[3]<-9                                                                      
+
+-Essa forma seria a mais logica de se motar um vetor em Java, e esta certo porem tem uma variante dela
+que eu considero mais facil.
+
+int n[] = {5,6,2,9}; 
+__________________________________________________________________________________________
+*Exemplo01:
+        int n[] = {4,7,9,2,5,6};
+        System.out.println("O vetor tem "+n.length+" espaços!!");
+        for(int c=0; c<n.length; c++){
+            System.out.println("Na posição "+c+" temos o valor: "+n[c]);
+        }
+
+OBS-1: Lembresse que o new significa que estamos tratando de um objeto e um vetor é sempre um objeto, mesmo
+escrito dessa forma sem o 'new'.
+OBS-2: Como um vetor é um objeto ele tem classes e metodos, o que torna ele muito maleavel, um dos metodos
+(o unico kkk) é o length que significa comprimento.
+OBS-3: Lembresse que no Java o valor inicial é sempre 0 então se estamos falando de um vetor que tem length
+6 quer dizer que ele tem 0,1,2,3,4,5 espaços.
+__________________________________________________________________________________________ 
+*Exemplo02:
+        String mes[] = {"JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"};
+        int tot [] ={31,28,31,30,31,30,31,31,30,31,30,31};
+        for(int c=0;c<mes.length;c++){
+            System.out.println("O mês de "+mes[c]+" têm "+tot[c]+" dias");
+        }
+
+OBS-1: Você pode usar o length de qualquer vetor por que os 2 tem 12 espaços. 
+__________________________________________________________________________________________
+Exemplo03:
+        double x[] = {2.4,7.4,-9.6,5,3.6};
+        for(double valor:x){
+            System.out.println(valor + "");
+        }
+
+OBS-1: Perceba que a estrutura de repetição foi escrita diferente, por que é uma estrutura nova!!!
+Essa é a (for it) é uma estrutura que só pode ser usada em vetores, e ela funciona assim, para cada
+casa do vetor(em sequencia) uma variavel recebe o valor respectivo daquela casa.
+
+MODIFICAÇÃO NO EXEMPLO03!!!!!!
+
+Exemplo03.1:
+        double x[] = {2.4,7.4,-9.6,5,3.6};
+        Arrays.sort(x);
+        for(double valor:x){
+            System.out.println(valor + "");
+        }
+
+OBS-1: Teste isso e veja a magica!!!!! 
+OBS-2: Assim que você terminar de escrever a linha, se você subir no seu codigo fonte na aba 'package', você
+vera que o NetBeans importou a biblioteca Arrays para o seu programa. Ela tem diverças funções mas neste caso o comando
+.sort vai por em ordem os seu valores (perceba a facilidade de fazer isso em java e a dificuldade de fazer no visualg). 
+__________________________________________________________________________________________
+Exemplo04:
+        int x[]={5, 8, 3, 7, 2};
+        Arrays.sort(x);
+        for (int valor : x){
+            System.out.println(valor);
+        }
+        int p = Arrays.binarySearch(x, 8);
+        System.out.println("Encontrei o valor na posição: "+p);
+
+OBS-1: Teste primeiro!!!!
+OBS-2: Perceba que agora nos conseguimos fazer buscas de valores dentro do vetor com apenar uma linha. Essa busca é feita
+com o comando .binarySearch(vetor,numero procurado) porem ela só funciona se o vetor estiver ordenado, por isso temos que
+usar o comando .sort neste exercicio também.
+__________________________________________________________________________________________
+Exemplo05:
+        int x[]= new int[354];
+        Arrays.fill(x, 34);
+        for (int valor:x){
+            System.out.println(valor+" ");
+        }
+
+OBS-1: Perceba que eu criei um vetor gigante por querer, pois preencher ele valor por valor seria impocivel, por isso existe 
+o comando .fill(vetor,valor) dentro da biblioteca Arrays, que preenche todo o vetor com um valor.
+--------------------------------------------------------------------------------------------------------------------------------
+ *SWING:EXEMPLO 16, ADICIONAR VALOR NO VETOR (imagem:EXEMPLO16.png) 
+--------------------------------------------------------------------------------------------------------------------------------
+
+1-Monte o projeto Swing de acordo com a imagem
+
+2-Vá na aba de plublic class, que é a raiz do código e crie o seu vetor, o seu objeto linkado a lista, e um valor int que
+vai servir de indice do vetor para modificação dos valores selecionado.
+
+Dentro de public class:
+        int vetor[] =new int[5];
+        DefaultListModel lista = new DefaultListModel();
+        int selecionado = 0;
+
+3-Depois disso você terá que linkar esse objeto lista ao seu jList1. Para isso você terá que ir na preferencia model, escolha
+a opção 'Codigo Personalizado' e escreva o nome do seu objeto DefaultListModel(que no caso é lista).
+
+4-Na aba public, que é a aba de inicialização do projeto, você tera que criar uma estrutura de repetição que preencha a lista de 
+acordo com os valores do vetor(inicialmente tudo zero).
+
+Dentro do public:
+            for(int cont =0;cont<vetor.length;cont++){
+            lista.addElement("Vetor["+cont+"]<-"+vetor[cont]);    
+            }
+
+5-Dentro do botão de Adicionar, você tera que fazer com que o vetor ,no indicie selecionado pelo mause, receba o valor escolhido
+no jSpinner1. Depois você terá que limpar a lista e adicionar os novos valores.
+
+Dentro de evento/action/actionperformed do Botão:
+        vetor[selecionado] =(int) jSpinner1.getValue();
+        lista.removeAllElements();
+        for(int cont =0;vetor.length>cont;cont++){
+            lista.addElement("Vetor["+cont+"]<-"+vetor[cont]);            
+        }
+         
+6-Dentro do botão de Remover, você tera que fazer com que o vetor ,no indicie selecionado pelo mause, receba 'zero' .Depois você 
+terá que limpar a lista e adicionar os novos valores.
+
+Dentro de evento/action/actionperformed do Botão:
+        vetor[selecionado] = 0;
+        lista.removeAllElements();
+        for(int cont =0;vetor.length>cont;cont++){
+            lista.addElement("Vetor["+cont+"]<-"+vetor[cont]);            
+        }
+7-Dentro do botão de Ordenar, você tera que ordenar ultilizando biblioteca Arrays. Depois você terá que limpar a lista e adicionar 
+os novos valores.
+
+Dentro de evento/action/actionperformed do Botão:
+        Arrays.sort(vetor);
+        lista.removeAllElements();
+        for(int cont =0;vetor.length>cont;cont++){
+            lista.addElement("Vetor["+cont+"]<-"+vetor[cont]);            
+        }
+
+8-Para fazer com que a variavel selecionado, que indica o indice do valor selecionado dentro do vetor, mudar com o clic do mause e
+fazer com que o jLabel altere o indicie com o mesmo clic, você terá que adicionar um evento ao jList1.
+
+Dentro de evento/mause/mauseClicked da Lista:
+        selecionado = jList1.getSelectedIndex();
+        jLabel2.setText("[" + selecionado +  "]");
+
+OBS-1: Esse é dificil mesmo. Tudo que ta comentado acontece em ordem, então vai com calma que da certo kkkkk.   
+
+--------------------------------------------------------------------------------------------------------------------------------   
+*Metodo:
+No Java, assim como no Portuês estruturado, existem 2 tipos de metedos/rotina, as que retornam valor e as que não retornam,
+qual a diferença pratica disso, que as que retornam você pode trabalhar com o valor que retorna do seu metodo,exemplo: você
+pode atribuir o resultado do seu metodo á uma variavel dentro do programa, diferente do que não retorna, que mesmo que ele 
+mostre o trabalho final ele não atribui a nada o que aconteceu dentro do metodo. Então como no Portugol, podemos chamar de
+Função o metodo que retorna valor, e Procedimento o metodo que não retorna. Dentro dos metodos ainda existe uma atribuição
+que é possivel fazer, essa atribuição é se o metodo vai ultilizar os valores de uma determinada variavel ou se ele vai ultilizar
+a propria variavel como parametro de valor.
+
+Exemplo de Procedimento que não retorna valor passando pra Java:
+
+-Portugol:                                                            Java:                                      
+
+Procedimento soma(a,b:inteiro)                                         void soma (int a,int b){                                                         
+ var                                                                   int s=a+b;                               
+  s:inteiro                                                            sout("A soma é"+s);                                      
+inicio                                                                 }                                 
+ s<-a+b                                                                                                  
+ escreva("A soma é:",s)                                                                                                  
+fimprocedimento                                                                                                   
+                                                                                                  
+inicio                                                                 n1=4;                                 
+n1<-4                                                                  n2=7;                                
+n2<-7                                                                  soma(n1,n2);                                
+ soma(n1,n2)                                                                                                                                                                                                    
+fimalgoritimo
+
+Neste procedimento em portugol nos determinamos que vai ser ultilizado os valores das variaveis n1 e n2(a,b em ordem) e dizemos
+que elas são inteiras(crie as variaveis, eu n criei pq ia ficar muito grande). Então o programa inicia atribuindo valores a variaveis
+e logo depois a função é chamada, assim os valores respectivos das variaveis entram no precedimento que efetua uma soma e escreve.
+No mesmo procedimento em java o procedimento é escrito acima da aba plublic static void pois ele represneta outro procedimento, e a parte
+de baixo é escrita no public static...
+
+Exemplo de Função que retorna valor passando pra Java: 
+
+-Portugol:                                                            Java:                                      
+
+Funcao soma(a,b:inteiro) inteiro                                       int soma (int a,int b){                                                         
+ var                                                                   int s=a+b;                               
+  s:inteiro                                                            return s;                                      
+inicio                                                                 }                                 
+ s<-a+b                                                                                                  
+ retorna s                                                                                                  
+fimfuncao                                                                                                   
+                                                                                                  
+inicio                                                                 n1=4;                                 
+n1<-4                                                                  n2=7;                                
+n2<-7                                                                  int resp = soma(n1,n2);                                
+resp<-soma(n1,n2)                                                      sout("A soma é"+resp)  
+Escreva("A soma é",resp)                                                                                                                                                                                                   
+fimalgoritimo
+
+Perceba que as diferenças são minimas mas no programa, o fato de você conseguir trabalhar com o valor da função é uma grande coisa. E também
+perceba que o que difere um do outro é a palavra void para int, que sigifica exatamente se vai retornar valor ou não, no caso void não retorna
+e int(ou qualquer que seja o tipo de valor que você queira retornar) retorna.
+
+*Agora você deve ter percebido que todos os exercicios que você escreveu dentro da classe public static void main foram realizados por que main
+é o procedimento principal do programa, e dentro dessa linha tem outras informaçõe que você vai precisar para que os exemplos em Java acima fucionem.
+Para resolver o problema dos exemplos é so adicionar a palavra 'static' antes do seu metodo 'soma' (static int ou void soma) pois você não pode chamar
+um metodo estatico dentro de outro metodo estatico, que no caso é o main.
+E o seu metodo ele pode ter varios niveis de acesso, e é isso que significa o public no caso do metodo main, isso quer dizer que se você não quiser
+que uma função que você criou não seja chamada dentro de nenhum metodo a não ser o especifico voce pode escrever ela assim 'private static void funcao'.
+
+
+public class Operacoes {
+  static String cont(int i,int f){
+      String s ="";
+      for (int c=i;c<=f;c++){
+       s+=c+" ";   
+      }
+      return s;
+      } 
+
+
+ public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println(Operacoes.cont(1,6));
+        
+    }

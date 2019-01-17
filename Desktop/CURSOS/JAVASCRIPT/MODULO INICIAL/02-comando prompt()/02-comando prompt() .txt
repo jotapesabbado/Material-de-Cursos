@@ -1,0 +1,3 @@
+//cria janela de popup dentro do site, comando pra TESTE(pouco usado)
+
+var nome = prompt("qual seu nome");

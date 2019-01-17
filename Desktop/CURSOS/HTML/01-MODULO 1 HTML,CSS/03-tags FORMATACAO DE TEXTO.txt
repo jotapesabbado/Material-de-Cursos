@@ -1,0 +1,19 @@
+<html>
+
+	<head>
+		<title>Titulo da sua página</title>
+		
+	</head>
+	<body>
+
+	<strong>negrito</strong>
+	<i>hitalico</i>
+	<u>sublinha</u>
+	<small>diminui o texto em relação ao geral</small>
+	<strike>traço no meio do texto</strike>
+	<sub>posiciona um pouco a baixo</sub>
+	<sup>posiciona um pouco a cima</sup>	
+
+	</body>
+
+</html>

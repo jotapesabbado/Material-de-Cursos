@@ -1,0 +1,20 @@
+body{
+	margin:0;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+	background-color:yellow;
+	text-transform:uppercase;
+}
+
+
+/*a:hover quer dizer que o elemento a vai responder quando
+o mouse passar por cima(over) do elemento*/
+/*a:active fara uma ação quando o link do url for o referido*/
+
+

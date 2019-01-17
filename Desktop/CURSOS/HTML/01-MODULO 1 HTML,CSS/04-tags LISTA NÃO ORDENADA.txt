@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>titulo da pagina</title>
+	</head>
+	<body>
+		<ul style = "list-style-type:circle">lista não ordenada Unordenade List
+			<li>primeiro da lista</li>
+			<li>segundo da lista</li>
+			<li>terceiro da lista</li>
+		</ul>
+	</body>
+</html>
+
+**ao lado de ul (style) é um atributo
+**pode trocar o circle por disk,square ou none

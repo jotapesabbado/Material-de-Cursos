@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>titulo da pagina</title>
+	</head>
+	<body>
+		<img src = "http://www.google.com.br/google.jpg"
+		width ="200"  title = "imagem do google"  alt = "google"
+		/>
+
+	</body>
+</html>
+
+
+**img tag para incerir imagem
+**src atributo para definir o diretorio da imagem ou endereco de site
+**width atributo para definir a largura da imagem
+**hidth atributo para definir a autura da imagem
+**se botar só a altura ou largura o html proporciona a imagem
+**alt atributo para definir um nome antes que a imagem carrege(caso erro de carregamento)
+**title atributo para definir uma legenda para a imagem ao passa o mouse

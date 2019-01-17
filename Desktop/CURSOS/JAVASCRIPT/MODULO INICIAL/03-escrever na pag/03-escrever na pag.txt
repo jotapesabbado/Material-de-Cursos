@@ -1,0 +1,6 @@
+//incere dentro do site, comando pra TESTE(pouco usado)
+
+document.write("Esse teste");
+
+document.write("<img src='http://www.google.com/google.jpg'  />");
+

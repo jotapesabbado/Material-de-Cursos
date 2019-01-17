@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Flexbox</title>
+	<style type="text/css">
+		.container{
+			display:flex;
+			height: 500px;
+			background-color: #333;
+			flex-direction:row;
+			justify-content:center;
+			align-items:center;
+			flex-wrap:wrap;
+			/*alinhamento de tudo que esta dentro do content quando tem flex-wrap:wrap;*/
+			align-content:flex-end;
+		}
+		.container div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			margin: 10px;
+			padding: 10px;
+			font-size: 18px;
+		}/*
+		CRIAL CLASS PRA TESTAR
+		.div10{
+			item especifico recebe o proprio alinhamento
+			align-self:flex-start;*/
+			/*alterar a ordem em que vai aparecer, valores no padrao estão com order:0; se voce por um numero maior que zero ele vai pro inicio se por um numero menor que 0 vai pro final
+			order:-1;
+			order:1;
+		}*/		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div >1</div>
+		<div >2</div>
+		<div >3</div>
+		<div >4</div>
+		<div >5</div>
+		<div >6</div>
+		<div >7</div>
+		<div >8</div>
+		<div >9</div>
+		<div >10</div>
+		<div >11</div>
+		<div >12</div>
+		<div >13</div>
+		<div >14</div>
+		<div >15</div>
+
+
+	</div>
+
+</body>
+</html>
+
+<!--
+	
+-->

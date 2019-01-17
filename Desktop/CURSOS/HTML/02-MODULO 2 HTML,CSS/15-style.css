@@ -1,0 +1,9 @@
+body{
+	margin: 0;
+}
+form{
+	background-color: #AAA;
+	margin: auto;
+	padding: 25px;
+	width: 200px;
+}

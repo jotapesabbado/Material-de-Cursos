@@ -1,0 +1,14 @@
+body {
+	background-color: blue;
+	color: white;
+}
+h1{
+	color: red;
+}
+img{
+	width: 200px;
+	
+}
+
+/*tudo que estiver dentro dos corpos da relativos 
+ao arquivo de html vai ser modificado la*/

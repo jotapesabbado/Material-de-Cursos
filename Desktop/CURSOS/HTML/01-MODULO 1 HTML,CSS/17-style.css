@@ -1,0 +1,43 @@
+body{
+margin: 0;
+}
+.teste1{
+	background-color: gray;
+	color: white;
+	width: 400px;
+	height: 400px;
+	border: 3px solid red;
+
+}
+.teste2{
+	background-color: gray;
+	color: white;
+	width: 400px;
+	height: 400px;
+	border: 3px dotted red;
+
+}
+.teste3{
+	background-color: gray;
+	color: white;
+	width: 400px;
+	height: 400px;
+	border: 3px dashed red;
+
+}
+.teste4{
+	background-color: gray;
+	color: white;
+	width: 400px;
+	height: 400px;
+	border: 3px solid red;
+	border-radius:20px; 
+
+}
+
+
+/*bordas são formadar porum conjunto deinformacoes
+tamanho, tipo e cor*/
+/*border-radius é para aredondar bordas*/
+/*prafazer um circulo é só aredondar uma borda metade 
+do tamanho total dela*/

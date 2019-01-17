@@ -1,0 +1,26 @@
+body{
+	margin:0;
+}
+.texto{
+	width:700px;
+	height:500px;
+	background-color:gray;
+	color:red;
+	font-size:20px;
+	font-family:Verdana, Arial;
+	font-weight:900;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:underline;
+	
+	margin:auto;
+	margin-top:20px;
+	padding-top:20px;
+	
+}
+
+/*font-weight define o quanto de negrito vai haver*/
+/*margin auto altera a margem automaticamente 
+torna meio responcivo*/
+/*padding serve pra aplicar margem dentro da div margin
+define fora da margem*/

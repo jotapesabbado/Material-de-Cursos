@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+}
+.exemplo{
+	width: 150px;
+	height:150px;
+	background-color: red;
+	margin: auto;
+	margin-top: 100px;
+	opacity: 0;
+	/*transition:aplica pra todas as propriedades,tempo,velocidade*/
+	transition:all 1s linear;
+}
+.exemplo:hover{
+	background-color: blue;
+	width: 300px;
+	opacity: 100;
+}
+a{
+	color: black;
+	transition:all 1s linear;
+}
+a:hover{
+	color:yellow;
+}

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Pagina teste</title>
+	</head>
+	<body>
+		<form method ="POST">
+			Usuario<br>
+			<input type = "text" name = "usuario"/>
+			<br>
+			senha<br>
+			<input type = "password" name = "senha"/>
+			
+			<br>
+			<input type = "radio" name = "radio" value ="1"/>
+			opcao 1
+			<br>
+			<input type = "radio" name = "radio" value = "2"/>
+			opcao 2
+			<br>
+			<input type = "radio" name = "radio" value = "3"/>
+			opcao 3
+			<br>
+			<input type = "checkbox"/>
+			<br>
+			<input type = "submit" value="Enviar" />
+			<br>
+			<textarea name ="campo"></textarea>
+			<br>
+			<select name = "opcoes">
+					<option value ="1">campo 1</option>
+					<option value ="2">campo 2</option>
+					<option value ="3">campo 3</option>
+			</select>
+		</form>
+
+	</body>
+</html>
+
+
+**method metodo
+**metodo GET envia as informações pelo url
+**metodo POST envia dados internamente
+**action atributo que define pra onde vão oS dadoS 
+**name define como o resultado vai ser nomeado
+** value atributo que define quanto vale o campo

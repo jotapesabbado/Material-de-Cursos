@@ -1,0 +1,13 @@
+body{
+	margin: 0;
+}
+.exemplo{
+	width: 150px;
+	height:150px;
+	border:1px solid black ;
+	margin: auto;
+	margin-top: 100px;
+	word-wrap:break-word;
+}
+/*word-wrap no modo break-word é usada pra quebra 
+uma palavra muito grande que é maior que a div*/

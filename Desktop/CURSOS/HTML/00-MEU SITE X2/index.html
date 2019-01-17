@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portifolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
+
+</head>
+<body>
+	<!--HEADER-->
+	<header>
+		<section id="header_section">
+			<!--BANNER-->
+			<div id="banner">
+				<canvas id="galaxy"></canvas>
+				<div id = "myinfo">
+					<h1>joão pedro sabbado</h1>
+					<h3>desenvolvedor e ilustrador</h3>
+				</div>	
+			</div>
+
+			<!--MENU-->
+			<nav>
+				<canvas id="l1"></canvas>
+				<ul>
+					<li><a href="/">CODE</a></li>
+					<li><a href=""><img src="assets/img/logo.png" width="55" height="55" alt="Imagem do logo"></a></li>
+					<li><a href="/">ARTE</a></li>
+				</ul>
+				<canvas id="l2"></canvas>
+			</nav>
+		</section>	
+	</header>
+
+	<!--SESSÃO PRINCIPAL DO SITE-->
+	<section id="main_section">
+		<div class="blocos">
+			<div class="blocos_titlo" style="border-right: 2px solid black;">
+				<img class="brasao" src="assets/img/hi.png">
+				<h3>olá</h3>
+			</div>
+			<div class="bloco_conteudo" style="padding-left: 10px;align-items: center;color: black;">
+				<p>Bem vindo ao meu mundo!!! Neste lugar você encontrara todas as minhas maluquices relacionadas a <br> Programação e ilustrações.</p>
+			</div>
+		</div>
+
+		<div class="blocos" style="flex-direction: column; border-top:2px solid black; ">
+			<div class="blocos_titlo">
+				<div class="sabre" style="transform: scaleX(-1);"></div>
+				<div class="titulo_in">
+					<img class="brasao" src="assets/img/sword.png">
+					<h3>Skills</h3>
+				</div>
+				<div class="sabre"></div>
+			</div>
+			<div class="bloco_conteudo" style="background-color: black;">
+				<div class="topscreen">
+					<div class = "topscreen_section" style="padding-top: 10px;">
+						<h3>SCORE:999999</h3>
+						<div class="life">
+							<h3>YOU:</h3>
+							<img src="assets/img/coracao.png" width="35px" height="35">
+							<img src="assets/img/coracao.png" width="35px" height="35">
+							<img src="assets/img/coracao.png" width="35px" height="35">
+						</div>
+						
+					</div>
+					<div class = "topscreen_section">
+						<h3 style="font-size: 35px;text-align: center;">KILL<br>THEM!!</h3>
+						<h3 style="font-size: 12px;text-align: center;">OU APENAS CLIQUE...</h3>
+					</div>
+					<div class = "topscreen_section"  style="padding-top: 10px;">
+						<h3>PLAYER 1</h3>
+					</div>
+										
+				</div>
+				<div class="alvo">
+					<div class="monster">
+						<a href="">
+						<img src="assets/img/m1.gif">
+						<h3 style="margin-left: 20px;">CODE</h3>
+						</a>
+					</div>
+					<div class="monster">
+						<a href="">
+						<img src="assets/img/m2.gif">
+						<h3 style="margin-right:20px;">ARTE</h3>
+						</a>
+					</div>
+				</div>
+				<canvas id="game"></canvas>
+				<div class = "rules">
+					<h3>USE A BARRA DE ESPAÇO E AS SETAS...</h3>
+				</div>
+
+			</div>
+		</div>
+	</section>
+<script type="text/javascript" src="assets/js/line.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/game.js"></script>
+
+</body>
+</html>

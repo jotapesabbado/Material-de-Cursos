@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	font-family: Calibri;
+}
+
+footer{
+	background-color: blue;
+	font-size: 30px;
+	color: purple;
+}
+header{
+	background-color: green;
+	border:5px solid black;
+	color: red;
+}
+nav{
+	background-color: yellow;
+	color: red;
+}

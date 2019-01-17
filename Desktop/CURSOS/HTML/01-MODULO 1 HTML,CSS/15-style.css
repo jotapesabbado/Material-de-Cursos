@@ -1,0 +1,24 @@
+body {
+	background-color: blue;
+	color: white;
+}
+h1{
+	color: red;
+}
+img{
+	width: 200px;
+	
+}
+.teste{
+	width: 500px;
+}
+#titulo{
+	font-size: 40px;
+}
+
+
+/*todos od itens que tiverem a (.) clase teste serão
+modificados separadamente*/
+/*id funciona como o class mas pra identificar uma
+tag especifica (#)*/
+
